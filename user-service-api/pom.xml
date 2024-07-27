@@ -30,13 +30,6 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
-		<!-- Commons lib -->
-		<dependency>
-			<groupId>br.com.chamadosbff</groupId>
-			<artifactId>hd-commons-lib</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-
 		<!-- Actuator - Monitoramento e gerenciamento de aplicações Spring Boot -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
