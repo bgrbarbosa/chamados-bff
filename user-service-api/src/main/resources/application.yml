@@ -1,0 +1,12 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: user-service-api
+  profiles:
+    active: ${PROFILE_ACTIVE}
+  data:
+    mongodb:
+      uri: mongodb+srv://help-desk-user:help-desk-user@cluster0.nm4uazr.mongodb.net/helpdeskdb?retryWrites=true&w=majority&appName=Cluster0
+      auto-index-creation: true
+
