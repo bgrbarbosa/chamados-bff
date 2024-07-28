@@ -1,6 +1,7 @@
 package br.com.chamadosbff.user_service_api.controller.impl;
 
 import br.com.chamadosbff.hd_commons_lib.model.request.CreateUserRequest;
+import br.com.chamadosbff.hd_commons_lib.model.request.UpdateUserRequest;
 import br.com.chamadosbff.hd_commons_lib.model.responses.UserResponse;
 import br.com.chamadosbff.user_service_api.controller.UserController;
 import br.com.chamadosbff.user_service_api.service.UserService;
@@ -25,9 +26,19 @@ public class UserControllerImpl implements UserController {
     }
 
     @Override
+    public ResponseEntity<UserResponse> findById(final String id) {
+        return ResponseEntity.ok().body(userService.findById(id));
+    }
+
+    @Override
     public ResponseEntity<Void> save(final CreateUserRequest createUserRequest) {
         userService.save(createUserRequest);
         return ResponseEntity.status(CREATED.value()).build();
+    }
+
+    @Override
+    public ResponseEntity<UserResponse> update(final String id, final UpdateUserRequest updateUserRequest) {
+        return ResponseEntity.ok().body(userService.update(id, updateUserRequest));
     }
 
 
