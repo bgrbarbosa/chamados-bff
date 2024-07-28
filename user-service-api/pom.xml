@@ -30,6 +30,26 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
+
+		<dependency>
+			<groupId>org.mapstruct</groupId>
+			<artifactId>mapstruct</artifactId>
+			<version>1.5.3.Final</version> <!-- Use a versão mais recente -->
+		</dependency>
+		<dependency>
+			<groupId>org.mapstruct</groupId>
+			<artifactId>mapstruct-processor</artifactId>
+			<version>1.5.3.Final</version> <!-- Use a versão mais recente -->
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- Biblioteca de lib-commons-->
+		<dependency>
+			<groupId>br.com.chamadosbff</groupId>
+			<artifactId>hd-commons-lib</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
 		<!-- Actuator - Monitoramento e gerenciamento de aplicações Spring Boot -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -55,33 +75,21 @@
 			<version>2.0.4</version>
 		</dependency>
 
-		<!-- Lombok -->
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<scope>provided</scope>
-		</dependency>
-
-		<!-- Binding para o MapStruct com Lombok -->
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok-mapstruct-binding</artifactId>
-			<version>0.2.0</version>
-		</dependency>
-
-		<!-- MapStruct -->
-		<dependency>
-			<groupId>org.mapstruct</groupId>
-			<artifactId>mapstruct</artifactId>
-			<version>1.5.3.Final</version>
-		</dependency>
-
 		<!-- Biblioteca para geração de dados aleatórios para testes -->
 		<dependency>
 			<groupId>uk.co.jemos.podam</groupId>
 			<artifactId>podam</artifactId>
 			<version>7.2.6.RELEASE</version>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.34</version>
+			<scope>provided</scope>
+		</dependency>
+
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
