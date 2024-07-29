@@ -30,11 +30,21 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
+
+		<!-- https://mvnrepository.com/artifact/uk.co.jemos.podam/podam -->
+		<dependency>
+			<groupId>uk.co.jemos.podam</groupId>
+			<artifactId>podam</artifactId>
+			<version>7.2.6.RELEASE</version>
+			<scope>test</scope>
+		</dependency>
+
 		<dependency>
 			<groupId>org.mapstruct</groupId>
 			<artifactId>mapstruct</artifactId>
 			<version>1.5.3.Final</version> <!-- Use a versão mais recente -->
 		</dependency>
+
 		<dependency>
 			<groupId>org.mapstruct</groupId>
 			<artifactId>mapstruct-processor</artifactId>
